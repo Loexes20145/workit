@@ -1,3 +1,6 @@
-
+@import '../reset.css';
+body {
+  background: #584d62;
+}
 
 /*# sourceMappingURL=style.css.map */
