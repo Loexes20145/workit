@@ -1,10 +1,10 @@
-@mixin buttonPrimaryDefault($bd-color: $eucalyptus, $bg-color: $dark-purple, $txt-color: $eucalyptus) {
+@mixin callToAction--Default($bd-color: $eucalyptus, $bg-color: $dark-purple, $txt-color: $eucalyptus) {
     border: 2px solid $bd-color;
     color: $txt-color;
     background-color: $bg-color;
 }
 
-@mixin buttonPrimaryHover($bd-color: $eucalyptus, $bg-color: $eucalyptus, $txt-color: $dark-purple) {
+@mixin callToAction--Hover($bd-color: $eucalyptus, $bg-color: $eucalyptus, $txt-color: $dark-purple) {
     border: 2px solid $bd-color;
     color: $txt-color;
     background-color: $bg-color;

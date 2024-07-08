@@ -12,12 +12,12 @@ body {
 }
 
 a {
-    
+
     &.cta {
-        @include buttonPrimaryDefault;
+        @include callToAction--Default;
 
         &:hover {
-            @include buttonPrimaryHover;
+            @include callToAction--Hover;
         }
     }
 }
