@@ -8,4 +8,15 @@ body {
   line-height: 32px;
 }
 
+a.cta {
+  border: 2px solid #44ffa1;
+  color: #44ffa1;
+  background-color: #24053e;
+}
+a.cta:hover {
+  border: 2px solid #44ffa1;
+  color: #24053e;
+  background-color: #44ffa1;
+}
+
 /*# sourceMappingURL=style.css.map */

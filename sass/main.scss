@@ -10,3 +10,14 @@ body {
     background: $davys-grey;
     @include bodyFont;
 }
+
+a {
+    
+    &.cta {
+        @include buttonPrimaryDefault;
+
+        &:hover {
+            @include buttonPrimaryHover;
+        }
+    }
+}
