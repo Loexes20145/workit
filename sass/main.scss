@@ -2,14 +2,11 @@
 
 @import '../reset.css';
 @import '../font.css';
-
-$dark-purple: #24053e;
-$eucalyptus: #44ffa1;
-$davys-grey: #584d62;
-$ghost-white: #fcf8ff;
-$white: #ffffff;
+@import 'design/colors.scss';
+@import 'design/typography.scss';
+@import 'design/buttons.scss';
 
 body {
     background: $davys-grey;
-    font-family: 'Manrope'
+    @include bodyFont;
 }

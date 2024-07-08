@@ -1,0 +1,23 @@
+@mixin headingL {
+    font-family: 'Fraunces';
+    font-size: 80px;
+    line-height: 80px;
+}
+
+@mixin headingM {
+    font-family: 'Fraunces';
+    font-size: 56px;
+    line-height: 64px;
+}
+
+@mixin headingS {
+    font-family: 'Fraunces';
+    font-size: 32px;
+    line-height: 40px;
+}
+
+@mixin bodyFont {
+    font-family: 'Manrope';
+    font-size: 18px;
+    line-height: 32px;
+}
