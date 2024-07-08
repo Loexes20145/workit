@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Fraunces';
+    src: 
+        url(fonts/Fraunces-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: 
+        url(fonts/Manrope-Regular.ttf) format('truetype');
+}

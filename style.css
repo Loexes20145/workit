@@ -1,6 +1,9 @@
+/* Design System */
 @import '../reset.css';
+@import '../font.css';
 body {
   background: #584d62;
+  font-family: "Manrope";
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,8 @@
+/* Design System */
+
+@import '../reset.css';
+@import '../font.css';
+
 $dark-purple: #24053e;
 $eucalyptus: #44ffa1;
 $davys-grey: #584d62;
@@ -6,4 +11,5 @@ $white: #ffffff;
 
 body {
     background: $davys-grey;
+    font-family: 'Manrope'
 }
