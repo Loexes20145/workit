@@ -2,4 +2,4 @@
 
 ### PREVIEW
 ### ---
-![Alt text](preview.jpg)
+![Alt text](info/preview.jpg)
