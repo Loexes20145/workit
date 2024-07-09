@@ -9,13 +9,14 @@
 
 body {
     background: #f2ccf2;
+    padding: 0 16px;
     @include bodyFont;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    margin: 32px 16px;
+    margin: 32px 0;
 
     background-color: $dark-purple;
 }
@@ -40,6 +41,21 @@ main {
         }
     }
 
+}
+
+.mainHero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    text-align: center;
+
+    margin: 32px 0;
+
+    .mainHero__Link {
+        font-weight: bold;
+        padding: 10px 22px;
+    }
 }
 
 .title {

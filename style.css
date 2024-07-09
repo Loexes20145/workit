@@ -3,6 +3,7 @@
 @import '../font.css';
 body {
   background: #f2ccf2;
+  padding: 0 16px;
   font-family: "Manrope";
   font-size: 18px;
   line-height: 32px;
@@ -11,7 +12,7 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  margin: 32px 16px;
+  margin: 32px 0;
   background-color: #24053e;
 }
 
@@ -28,6 +29,19 @@ main .sectionOffer .title {
 }
 main .sectionOffer__Element__Content {
   text-align: center;
+}
+
+.mainHero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+  margin: 32px 0;
+}
+.mainHero .mainHero__Link {
+  font-weight: bold;
+  padding: 10px 22px;
 }
 
 .title {
