@@ -15,6 +15,9 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    margin: 32px 16px;
+
+    background-color: $dark-purple;
 }
 
 main {

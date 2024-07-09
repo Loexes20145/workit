@@ -11,6 +11,8 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  margin: 32px 16px;
+  background-color: #24053e;
 }
 
 main .sectionOffer {
