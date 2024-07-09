@@ -2,6 +2,7 @@
     border: 2px solid $bd-color;
     color: $txt-color;
     background-color: $bg-color;
+    padding: 10px 22px;
 }
 
 @mixin callToAction--Hover($bd-color: $eucalyptus, $bg-color: $dark-purple, $txt-color: $eucalyptus) {

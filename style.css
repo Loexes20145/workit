@@ -39,6 +39,16 @@ main .sectionOffer .sectionOffer__Image {
   width: 320px;
   height: 184px;
 }
+main .sectionLouis .sectionLouis__ImageBox {
+  background-color: #44ffa1;
+}
+main .sectionLouis .sectionLouis__ImageBox .sectionLouis__ImageBox__Profile {
+  width: 265px;
+  height: 267px;
+}
+main .sectionLouis .sectionLouis__Content {
+  background-color: #24053e;
+}
 
 .mainHero {
   display: flex;
@@ -48,8 +58,6 @@ main .sectionOffer .sectionOffer__Image {
   margin: 32px 0;
 }
 .mainHero .mainHero__Link {
-  font-weight: bold;
-  padding: 10px 22px;
   margin: 40px 0 64px 0;
 }
 
@@ -84,10 +92,14 @@ main .sectionOffer .sectionOffer__Image {
   text-align: center;
 }
 
+a {
+  font-weight: bold;
+}
 a.cta--Button {
   border: 2px solid #44ffa1;
   color: #24053e;
   background-color: #44ffa1;
+  padding: 10px 22px;
 }
 a.cta--Button:hover {
   border: 2px solid #44ffa1;

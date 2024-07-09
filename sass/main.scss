@@ -49,6 +49,22 @@ main {
             height: 184px;
         }
     }
+
+    .sectionLouis {
+
+        .sectionLouis__ImageBox {
+            background-color: $eucalyptus;
+
+            .sectionLouis__ImageBox__Profile {
+                width: 265px;
+                height: 267px;
+            }
+        }
+
+        .sectionLouis__Content {
+            background-color: $dark-purple;
+        }
+    }
 }
 
 .mainHero {
@@ -60,8 +76,6 @@ main {
     margin: 32px 0;
 
     .mainHero__Link {
-        font-weight: bold;
-        padding: 10px 22px;
         margin: 40px 0 64px 0;
     }
 }
@@ -97,6 +111,7 @@ main {
 }
 
 a {
+    font-weight: bold;
 
     &.cta--Button {
         @include callToAction--Default;
