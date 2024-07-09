@@ -90,3 +90,23 @@ a {
         }
     }
 }
+
+.footer {
+    width: 116px;
+    height: 102.2px;
+    margin: 64px auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // align-items: center;
+
+    img {
+        display: inline-block;
+    }
+
+    .footer__Social {
+        display: flex;
+        justify-content: space-between;
+    }
+}

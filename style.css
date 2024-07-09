@@ -82,4 +82,20 @@ a.cta--Highlight:hover {
   color: #44ffa1;
 }
 
+.footer {
+  width: 116px;
+  height: 102.2px;
+  margin: 64px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer img {
+  display: inline-block;
+}
+.footer .footer__Social {
+  display: flex;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=style.css.map */
