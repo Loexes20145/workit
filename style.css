@@ -103,7 +103,7 @@ a.cta--Button {
   padding: 10px 22px;
 }
 a.cta--Button:hover {
-  border: 2px solid #44ffa1;
+  border-color: #44ffa1;
   color: #44ffa1;
   background-color: #24053e;
 }
@@ -113,8 +113,7 @@ a.cta--Highlight {
   color: #ffffff;
 }
 a.cta--Highlight:hover {
-  padding-bottom: 2px;
-  border-bottom: 3px solid #44ffa1;
+  border-bottom-color: #44ffa1;
   color: #44ffa1;
 }
 

@@ -6,7 +6,7 @@
 }
 
 @mixin callToAction--Hover($bd-color: $eucalyptus, $bg-color: $dark-purple, $txt-color: $eucalyptus) {
-    border: 2px solid $bd-color;
+    border-color: $bd-color;
     color: $txt-color;
     background-color: $bg-color;
 }
@@ -18,7 +18,6 @@
 }
 
 @mixin highlight--Hover($ul-color: $eucalyptus, $txt-color: $eucalyptus) {
-    padding-bottom: 2px;
-    border-bottom: 3px solid $ul-color;
+    border-bottom-color: $ul-color;
     color: $txt-color;
 }
