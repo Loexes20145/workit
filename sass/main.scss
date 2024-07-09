@@ -29,6 +29,9 @@ main {
         flex-direction: column;
         // justify-content: space-between;
         gap: 40px;
+
+        margin-top: 67px;
+        margin-bottom: 100px;
         
         .title {
             display: flex;
@@ -40,8 +43,12 @@ main {
         &__Element__Content {
             text-align: center;
         }
-    }
 
+        .sectionOffer__Image {
+            width: 320px;
+            height: 184px;
+        }
+    }
 }
 
 .mainHero {
@@ -56,11 +63,6 @@ main {
         font-weight: bold;
         padding: 10px 22px;
         margin: 40px 0 64px 0;
-    }
-
-    .mainHero__Image {
-        width: 320px;
-        height: 184px;
     }
 }
 

@@ -23,6 +23,8 @@ main .sectionOffer {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  margin-top: 67px;
+  margin-bottom: 100px;
 }
 main .sectionOffer .title {
   display: flex;
@@ -32,6 +34,10 @@ main .sectionOffer .title {
 }
 main .sectionOffer__Element__Content {
   text-align: center;
+}
+main .sectionOffer .sectionOffer__Image {
+  width: 320px;
+  height: 184px;
 }
 
 .mainHero {
@@ -45,10 +51,6 @@ main .sectionOffer__Element__Content {
   font-weight: bold;
   padding: 10px 22px;
   margin: 40px 0 64px 0;
-}
-.mainHero .mainHero__Image {
-  width: 320px;
-  height: 184px;
 }
 
 .title {
