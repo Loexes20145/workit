@@ -1,19 +1,20 @@
-@mixin headingL {
+@mixin heading--Font {
     font-family: 'Fraunces';
-    font-size: 80px;
-    line-height: 80px;
 }
 
-@mixin headingM {
-    font-family: 'Fraunces';
-    font-size: 56px;
-    line-height: 64px;
+@mixin heading--L ($size: 80px, $spacing: 80px) {
+    font-size: $size;
+    line-height: $spacing;
 }
 
-@mixin headingS {
-    font-family: 'Fraunces';
-    font-size: 32px;
-    line-height: 40px;
+@mixin heading--M ($size: 56px, $spacing: 64px) {
+    font-size: $size;
+    line-height: $spacing;
+}
+
+@mixin heading--S ($size: 32px, $spacing: 40px) {
+    font-size: $size;
+    line-height: $spacing;
 }
 
 @mixin bodyFont {

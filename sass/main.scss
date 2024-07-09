@@ -5,19 +5,85 @@
 @import 'design/colors.scss';
 @import 'design/typography.scss';
 @import 'design/buttons.scss';
+@import 'design/pin.scss';
 
 body {
-    background: $davys-grey;
+    background: #f2ccf2;
     @include bodyFont;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+
+    .sectionOffer {
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+        gap: 40px;
+        
+        .title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+
+        &__Element__Content {
+            text-align: center;
+        }
+    }
+
+}
+
+.title {
+    @include heading--Font;
+
+    &--Small {
+        @include heading--S($size: 28px, $spacing: 36px);
+    }
+
+    &--Medium {
+        @include heading--M($size: 32px, $spacing: 48px);
+    }
+
+    &--Large {
+        @include heading--L($size: 50px, $spacing: 50px);
+    }
+
+    span {
+        display: inline-block;
+    }
+
+    .title__highlight {
+        @include highlight--Default($txt-color: inherit);
+    }
+
+    .title__Number {
+        @include pinNumber;
+
+        // margin: 15px;
+    }
 }
 
 a {
 
-    &.cta {
+    &.cta--Button {
         @include callToAction--Default;
 
         &:hover {
             @include callToAction--Hover;
+        }
+    }
+
+    &.cta--Highlight {
+        @include highlight--Default;
+
+        &:hover {
+            @include highlight--Hover;
         }
     }
 }

@@ -2,21 +2,82 @@
 @import '../reset.css';
 @import '../font.css';
 body {
-  background: #584d62;
+  background: #f2ccf2;
   font-family: "Manrope";
   font-size: 18px;
   line-height: 32px;
 }
 
-a.cta {
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .sectionOffer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+main .sectionOffer .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+main .sectionOffer__Element__Content {
+  text-align: center;
+}
+
+.title {
+  font-family: "Fraunces";
+}
+.title--Small {
+  font-size: 28px;
+  line-height: 36px;
+}
+.title--Medium {
+  font-size: 32px;
+  line-height: 48px;
+}
+.title--Large {
+  font-size: 50px;
+  line-height: 50px;
+}
+.title span {
+  display: inline-block;
+}
+.title .title__highlight {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #44ffa1;
+  color: inherit;
+}
+.title .title__Number {
+  width: 56px;
+  padding: 8px 0;
+  border: 1px solid #584d62;
+  border-radius: 28px;
+  text-align: center;
+}
+
+a.cta--Button {
   border: 2px solid #44ffa1;
   color: #24053e;
   background-color: #44ffa1;
 }
-a.cta:hover {
+a.cta--Button:hover {
   border: 2px solid #44ffa1;
   color: #44ffa1;
   background-color: #24053e;
+}
+a.cta--Highlight {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #44ffa1;
+  color: #ffffff;
+}
+a.cta--Highlight:hover {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #44ffa1;
+  color: #44ffa1;
 }
 
 /*# sourceMappingURL=style.css.map */

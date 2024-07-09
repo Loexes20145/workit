@@ -10,14 +10,14 @@
     background-color: $bg-color;
 }
 
-@mixin buttonSecondaryDefault($ul-color: $eucalyptus, $txt-color: $white) {
-    text-decoration: underline;
-    text-decoration-color: $ul-color;
+@mixin highlight--Default($ul-color: $eucalyptus, $txt-color: $white) {
+    padding-bottom: 2px;
+    border-bottom: 3px solid $ul-color;
     color: $txt-color;
 }
 
-@mixin buttonSecondaryHover($ul-color: $eucalyptus, $txt-color: $eucalyptus) {
-    text-decoration: underline;
-    text-decoration-color: $ul-color;
+@mixin highlight--Hover($ul-color: $eucalyptus, $txt-color: $eucalyptus) {
+    padding-bottom: 2px;
+    border-bottom: 3px solid $ul-color;
     color: $txt-color;
 }
