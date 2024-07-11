@@ -107,24 +107,28 @@ main {
         flex-direction: column;
         text-align: center;
         align-items: center;
+        justify-content: space-evenly;
 
-        padding: 32px 31px;
+        min-width: 281px;
+        // max-width: 730px;
+        height: 375px;
+        padding: 0 31px;
         position: relative;
         top: -53px;
 
-        .title {
-            margin-bottom: 16px;
-        }
+        // .title {
+        //     margin-bottom: 16px;
+        // }
 
-        &__Text {
-            margin-bottom: 24px
-        }
+        // &__Text {
+        //     margin-bottom: 24px
+        // }
     }
 }
 
 .title {
     // @include heading--Font;
-    display: inline-block;
+    // display: inline-block;
 
     &--Small {
         @include headingFont($size: 28px, $spacing: 36px);
@@ -139,6 +143,7 @@ main {
     }
 
     &__highlight {
+        display: inline-block;
         @include highlight--Default($txt-color: inherit);
     }
 
@@ -174,7 +179,7 @@ a {
 .footer {
     width: 116px;
     height: 102.2px;
-    margin: auto auto 64px auto;
+    margin: 64px auto;
 
     display: flex;
     flex-direction: column;

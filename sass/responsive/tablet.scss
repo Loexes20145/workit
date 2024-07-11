@@ -46,8 +46,8 @@ main {
     }
 
     .sectionOffer__Image {
-        width: 320px;
-        height: 184px;
+        width: 514px;
+        height: 296px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -56,14 +56,19 @@ main {
 .sectionLouis {
     // background-color: $white;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 21px;
+    // display: flex;
+    // flex-direction: column;
+    align-items: start;
+    // margin-bottom: 21px;
+
+    margin: 0 40px;
+    height: 526px;
+    position: relative;
+
 
     .sectionLouis__ImageBox {
-        background-color: $eucalyptus;
-        @include profile(281px);
+        // position: relative;
+        // top: 0;
 
         .sectionLouis__ImageBox__Profile {
             width: 265px; 
@@ -74,24 +79,14 @@ main {
     }
 
     .sectionLouis__Content {
-        color: $white;
-        background-color: $dark-purple;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
+        width: 402px;
+        height: 375px;
+        align-items: flex-start;
+        text-align: start;
 
-        padding: 32px 31px;
-        position: relative;
-        top: -53px;
-
-        .title {
-            margin-bottom: 16px;
-        }
-
-        &__Text {
-            margin-bottom: 24px
-        }
+        position: absolute;
+        top: 151px;
+        left: 175px;
     }
 }
 
@@ -104,11 +99,11 @@ main {
     }
 
     &--Medium {
-        @include headingFont($size: 32px, $spacing: 48px);
+        @include headingFont($size: 48px, $spacing: 56px);
     }
 
     &--Large {
-        @include headingFont($size: 50px, $spacing: 50px);
+        @include headingFont($size: 60px, $spacing: 60px);
     }
 
     &__highlight {
@@ -147,7 +142,7 @@ a {
 .footer {
     width: 116px;
     height: 102.2px;
-    margin: auto auto 64px auto;
+    margin: 64px auto;
 
     display: flex;
     flex-direction: column;
