@@ -1,85 +1,51 @@
-/* Design System */
-
-@import 'responsive/reset.scss';
-@import 'design/font.scss';
-
-@import 'design/colors.scss';
-@import 'design/typography.scss';
-@import 'design/buttons.scss';
-@import 'design/pin.scss';
-@import 'design/profile.scss';
-
-
 body {
-    @include bodyFont($size: 16px, $spacing: 28px);
-    background: #f2ccf2;
-    padding: 0 16px;
-
-    // background-image: radial-gradient(
-    //     $dark-purple 0% 33%,
-    //     $ghost-white 33% 67%,
-    //     $white 67% 100%
-    // );
+    padding: 0;
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    margin: 32px 0;
+    margin-right: 40px;
+    margin-left: 40px;
 
     // background-color: $dark-purple;
 }
 
 main {
-    margin: 64px 0;
+    margin: 0;
 }
 
 .mainHero {
     // background-color: $dark-purple;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    margin: 32px 0;
-
-    .mainHero__Link {
-        margin: 40px 0 64px 0;
-    }
+    max-width: 343px;
+    margin: 56px auto;
 }
 
 .sectionOffer {
-    // background-color: $ghost-white;
-
-    display: flex;
-    flex-direction: column;
-    // justify-content: space-between;
-    // gap: 40px;
+    // gap: 48px;
 
     margin-top: 67px;
     margin-bottom: 100px;
 
     &__Element {
-        margin: 40px 0;
+        margin: 24px 0;
     }
     
     .title {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         gap: 24px;
     }
 
     &__Element__Text {
-        text-align: center;
+        text-align: start;
     }
 
     .sectionOffer__Image {
-        width: 320px;
-        height: 184px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 514px;
+        height: 296px;
     }
 }
 
@@ -195,12 +161,4 @@ a {
         display: flex;
         justify-content: space-between;
     }
-}
-
-@media only screen and (min-width: 768px) {
-    @import 'responsive/tablet.scss';
-}
-
-@media only screen and (min-width: 1440px) {
-    @import 'responsive/desktop.scss';
 }

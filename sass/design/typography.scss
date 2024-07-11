@@ -17,8 +17,8 @@
     line-height: $spacing;
 }
 
-@mixin bodyFont {
+@mixin bodyFont ($size: 18px, $spacing: 32px) {
     font-family: 'Manrope';
-    font-size: 16px;
-    line-height: 28px;
+    font-size: $size;
+    line-height: $spacing;
 }
