@@ -2,52 +2,21 @@
 @import '../reset.css';
 @import '../font.css';
 body {
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 28px;
   background: #f2ccf2;
   padding: 0 16px;
-  font-family: "Manrope";
-  font-size: 18px;
-  line-height: 32px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
   margin: 32px 0;
-  background-color: #24053e;
 }
 
 main {
   margin: 64px 0;
-}
-main .sectionOffer {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin-top: 67px;
-  margin-bottom: 100px;
-}
-main .sectionOffer .title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-main .sectionOffer__Element__Content {
-  text-align: center;
-}
-main .sectionOffer .sectionOffer__Image {
-  width: 320px;
-  height: 184px;
-}
-main .sectionLouis .sectionLouis__ImageBox {
-  background-color: #44ffa1;
-}
-main .sectionLouis .sectionLouis__ImageBox .sectionLouis__ImageBox__Profile {
-  width: 265px;
-  height: 267px;
-}
-main .sectionLouis .sectionLouis__Content {
-  background-color: #24053e;
 }
 
 .mainHero {
@@ -59,6 +28,65 @@ main .sectionLouis .sectionLouis__Content {
 }
 .mainHero .mainHero__Link {
   margin: 40px 0 64px 0;
+}
+
+.sectionOffer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 67px;
+  margin-bottom: 100px;
+}
+.sectionOffer .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.sectionOffer__Element__Text {
+  text-align: center;
+}
+.sectionOffer .sectionOffer__Image {
+  width: 320px;
+  height: 184px;
+  margin-left: 20px;
+}
+
+.sectionLouis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 21px;
+}
+.sectionLouis .sectionLouis__ImageBox {
+  background-color: #44ffa1;
+  width: 281px;
+  height: 281px;
+  border-radius: 140.5px;
+  overflow: hidden;
+}
+.sectionLouis .sectionLouis__ImageBox .sectionLouis__ImageBox__Profile {
+  width: 265px;
+  height: 267px;
+  position: relative;
+  top: 19px;
+}
+.sectionLouis .sectionLouis__Content {
+  color: #ffffff;
+  background-color: #24053e;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 32px 31px;
+  position: relative;
+  top: -53px;
+}
+.sectionLouis .sectionLouis__Content .title {
+  margin-bottom: 16px;
+}
+.sectionLouis .sectionLouis__Content__Text {
+  margin-bottom: 24px;
 }
 
 .title {
@@ -94,6 +122,7 @@ main .sectionLouis .sectionLouis__Content {
 
 a {
   font-weight: bold;
+  line-height: 32px;
   text-decoration: none;
 }
 a.cta--Button {
@@ -120,7 +149,7 @@ a.cta--Highlight:hover {
 .footer {
   width: 116px;
   height: 102.2px;
-  margin: 64px auto;
+  margin: auto auto 64px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

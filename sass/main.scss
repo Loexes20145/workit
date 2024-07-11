@@ -6,11 +6,18 @@
 @import 'design/typography.scss';
 @import 'design/buttons.scss';
 @import 'design/pin.scss';
+@import 'design/profile.scss';
 
 body {
+    @include bodyFont;
     background: #f2ccf2;
     padding: 0 16px;
-    @include bodyFont;
+
+    // background-image: radial-gradient(
+    //     $dark-purple 0% 33%,
+    //     $ghost-white 33% 67%,
+    //     $white 67% 100%
+    // );
 }
 
 header {
@@ -18,56 +25,16 @@ header {
     justify-content: space-between;
     margin: 32px 0;
 
-    background-color: $dark-purple;
+    // background-color: $dark-purple;
 }
 
 main {
     margin: 64px 0;
-
-    .sectionOffer {
-        display: flex;
-        flex-direction: column;
-        // justify-content: space-between;
-        gap: 40px;
-
-        margin-top: 67px;
-        margin-bottom: 100px;
-        
-        .title {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 24px;
-        }
-
-        &__Element__Content {
-            text-align: center;
-        }
-
-        .sectionOffer__Image {
-            width: 320px;
-            height: 184px;
-        }
-    }
-
-    .sectionLouis {
-
-        .sectionLouis__ImageBox {
-            background-color: $eucalyptus;
-
-            .sectionLouis__ImageBox__Profile {
-                width: 265px;
-                height: 267px;
-            }
-        }
-
-        .sectionLouis__Content {
-            background-color: $dark-purple;
-        }
-    }
 }
 
 .mainHero {
+    // background-color: $dark-purple;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,6 +44,77 @@ main {
 
     .mainHero__Link {
         margin: 40px 0 64px 0;
+    }
+}
+
+.sectionOffer {
+    // background-color: $ghost-white;
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    gap: 40px;
+
+    margin-top: 67px;
+    margin-bottom: 100px;
+    
+    .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    &__Element__Text {
+        text-align: center;
+    }
+
+    .sectionOffer__Image {
+        width: 320px;
+        height: 184px;
+        margin-left: 20px;
+    }
+}
+
+.sectionLouis {
+    // background-color: $white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 21px;
+
+    .sectionLouis__ImageBox {
+        background-color: $eucalyptus;
+        @include profile(281px);
+
+        .sectionLouis__ImageBox__Profile {
+            width: 265px; 
+            height: 267px;
+            position: relative;
+            top: 19px;
+        }
+    }
+
+    .sectionLouis__Content {
+        color: $white;
+        background-color: $dark-purple;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+
+        padding: 32px 31px;
+        position: relative;
+        top: -53px;
+
+        .title {
+            margin-bottom: 16px;
+        }
+
+        &__Text {
+            margin-bottom: 24px
+        }
     }
 }
 
@@ -112,6 +150,7 @@ main {
 
 a {
     font-weight: bold;
+    line-height: 32px;
     text-decoration: none;
 
     &.cta--Button {
@@ -134,7 +173,7 @@ a {
 .footer {
     width: 116px;
     height: 102.2px;
-    margin: 64px auto;
+    margin: auto auto 64px auto;
 
     display: flex;
     flex-direction: column;
