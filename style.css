@@ -94,8 +94,6 @@ main {
 }
 .sectionOffer__Element {
   margin: 40px 0;
-}
-.sectionOffer .title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,29 +147,29 @@ main {
 }
 
 .title {
-  font-family: "Fraunces";
+  display: inline-block;
 }
 .title--Small {
+  font-family: "Fraunces";
   font-size: 28px;
   line-height: 36px;
 }
 .title--Medium {
+  font-family: "Fraunces";
   font-size: 32px;
   line-height: 48px;
 }
 .title--Large {
+  font-family: "Fraunces";
   font-size: 50px;
   line-height: 50px;
 }
-.title span {
-  display: inline-block;
-}
-.title .title__highlight {
+.title__highlight {
   padding-bottom: 2px;
   border-bottom: 3px solid #44ffa1;
   color: inherit;
 }
-.title .title__Number {
+.title__Number {
   width: 56px;
   padding: 8px 0;
   border: 1px solid #584d62;
@@ -239,24 +237,26 @@ a.cta--Highlight:hover {
     margin: 56px auto;
   }
   .sectionOffer {
+    display: flex;
+    flex-direction: column;
     margin-top: 67px;
     margin-bottom: 100px;
   }
   .sectionOffer__Element {
-    margin: 24px 0;
-  }
-  .sectionOffer .title {
+    margin: 40px 0;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     gap: 24px;
   }
   .sectionOffer__Element__Text {
-    text-align: start;
+    text-align: center;
   }
   .sectionOffer .sectionOffer__Image {
-    width: 514px;
-    height: 296px;
+    width: 320px;
+    height: 184px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .sectionLouis {
     display: flex;
@@ -295,29 +295,29 @@ a.cta--Highlight:hover {
     margin-bottom: 24px;
   }
   .title {
-    font-family: "Fraunces";
+    display: inline-block;
   }
   .title--Small {
+    font-family: "Fraunces";
     font-size: 28px;
     line-height: 36px;
   }
   .title--Medium {
+    font-family: "Fraunces";
     font-size: 32px;
     line-height: 48px;
   }
   .title--Large {
+    font-family: "Fraunces";
     font-size: 50px;
     line-height: 50px;
   }
-  .title span {
-    display: inline-block;
-  }
-  .title .title__highlight {
+  .title__highlight {
     padding-bottom: 2px;
     border-bottom: 3px solid #44ffa1;
     color: inherit;
   }
-  .title .title__Number {
+  .title__Number {
     width: 56px;
     padding: 8px 0;
     border: 1px solid #584d62;

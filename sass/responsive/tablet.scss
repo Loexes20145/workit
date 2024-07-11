@@ -23,29 +23,33 @@ main {
 }
 
 .sectionOffer {
-    // gap: 48px;
+    // background-color: $ghost-white;
+
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // gap: 40px;
 
     margin-top: 67px;
     margin-bottom: 100px;
 
     &__Element {
-        margin: 24px 0;
-    }
-    
-    .title {
+        margin: 40px 0;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         gap: 24px;
     }
 
     &__Element__Text {
-        text-align: start;
+        text-align: center;
     }
 
     .sectionOffer__Image {
-        width: 514px;
-        height: 296px;
+        width: 320px;
+        height: 184px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -92,29 +96,26 @@ main {
 }
 
 .title {
-    @include heading--Font;
+    // @include heading--Font;
+    display: inline-block;
 
     &--Small {
-        @include heading--S($size: 28px, $spacing: 36px);
+        @include headingFont($size: 28px, $spacing: 36px);
     }
 
     &--Medium {
-        @include heading--M($size: 32px, $spacing: 48px);
+        @include headingFont($size: 32px, $spacing: 48px);
     }
 
     &--Large {
-        @include heading--L($size: 50px, $spacing: 50px);
+        @include headingFont($size: 50px, $spacing: 50px);
     }
 
-    span {
-        display: inline-block;
-    }
-
-    .title__highlight {
+    &__highlight {
         @include highlight--Default($txt-color: inherit);
     }
 
-    .title__Number {
+    &__Number {
         @include pinNumber;
 
         // margin: 15px;
