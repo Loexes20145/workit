@@ -28,14 +28,17 @@ main {
 
     align-items: center;
 
-    &__Element {
-        flex-direction: row;
-
-        // .title__Number {}
-    }
-
-    &__Element__Text {
-        text-align: start;
+    .sectionOffer__Content {
+        
+        .sectionOffer__Element {
+            flex-direction: row;
+    
+            // .title__Number {}
+        }
+    
+        .sectionOffer__Element__Text {
+            text-align: start;
+        }
     }
 
     .sectionOffer__Image {

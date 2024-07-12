@@ -92,17 +92,21 @@ main {
   margin-top: 67px;
   margin-bottom: 100px;
 }
-.sectionOffer__Element {
+.sectionOffer .sectionOffer__Content {
+  display: flex;
+  flex-direction: column;
+}
+.sectionOffer .sectionOffer__Content .sectionOffer__Element {
   margin: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 }
-.sectionOffer__Element p {
+.sectionOffer .sectionOffer__Content .sectionOffer__Element p {
   max-width: 473px;
 }
-.sectionOffer__Element__Text {
+.sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
   text-align: center;
 }
 .sectionOffer .sectionOffer__Image {
@@ -117,6 +121,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin-bottom: 21px;
+  max-width: 1112px;
 }
 .sectionLouis .sectionLouis__ImageBox {
   background-color: #44ffa1;
@@ -238,10 +243,10 @@ a.cta--Highlight:hover {
   .sectionOffer {
     align-items: center;
   }
-  .sectionOffer__Element {
+  .sectionOffer .sectionOffer__Content .sectionOffer__Element {
     flex-direction: row;
   }
-  .sectionOffer__Element__Text {
+  .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
     text-align: start;
   }
   .sectionOffer .sectionOffer__Image {
@@ -327,17 +332,22 @@ a.cta--Highlight:hover {
     margin: 56px auto;
   }
   .sectionOffer {
+    flex-direction: column;
     align-items: center;
   }
-  .sectionOffer__Element {
+  .sectionOffer .sectionOffer__Content {
     flex-direction: row;
+    gap: 26px;
   }
-  .sectionOffer__Element__Text {
-    text-align: start;
+  .sectionOffer .sectionOffer__Content .sectionOffer__Element {
+    flex-direction: column;
+  }
+  .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
+    text-align: center;
   }
   .sectionOffer .sectionOffer__Image {
-    width: 514px;
-    height: 296px;
+    width: 767px;
+    height: 441px;
   }
   .sectionLouis {
     align-items: start;
@@ -368,18 +378,18 @@ a.cta--Highlight:hover {
   }
   .title--Small {
     font-family: "Fraunces";
-    font-size: 28px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 40px;
   }
   .title--Medium {
     font-family: "Fraunces";
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 56px;
+    line-height: 64px;
   }
   .title--Large {
     font-family: "Fraunces";
-    font-size: 60px;
-    line-height: 60px;
+    font-size: 80px;
+    line-height: 80px;
   }
   .title__highlight {
     padding-bottom: 2px;

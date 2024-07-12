@@ -25,22 +25,27 @@ main {
 
 .sectionOffer {
     // background-color: $ghost-white;
-
+    flex-direction: column;
     align-items: center;
 
-    &__Element {
+    .sectionOffer__Content {
         flex-direction: row;
+        gap: 26px;
 
-        // .title__Number {}
-    }
-
-    &__Element__Text {
-        text-align: start;
+        .sectionOffer__Element {
+            flex-direction: column;
+    
+            // .title__Number {}
+        }
+    
+        .sectionOffer__Element__Text {
+            text-align: center;
+        }
     }
 
     .sectionOffer__Image {
-        width: 514px;
-        height: 296px;
+        width: 767px;
+        height: 441px;
     }
 }
 
@@ -81,15 +86,15 @@ main {
     display: inline-block;
 
     &--Small {
-        @include headingFont($size: 28px, $spacing: 36px);
+        @include headingFont($size: 32px, $spacing: 40px);
     }
 
     &--Medium {
-        @include headingFont($size: 48px, $spacing: 56px);
+        @include headingFont($size: 56px, $spacing: 64px);
     }
 
     &--Large {
-        @include headingFont($size: 60px, $spacing: 60px);
+        @include headingFont($size: 80px, $spacing: 80px);
     }
 
     &__highlight {

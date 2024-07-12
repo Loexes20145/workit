@@ -60,20 +60,25 @@ main {
     margin-top: 67px;
     margin-bottom: 100px;
 
-    &__Element {
-        margin: 40px 0;
+    .sectionOffer__Content {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 24px;
 
-        p {
-            max-width: 473px;
+        .sectionOffer__Element {
+            margin: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+    
+            p {
+                max-width: 473px;
+            }
         }
-    }
-
-    &__Element__Text {
-        text-align: center;
+    
+        .sectionOffer__Element__Text {
+            text-align: center;
+        }
     }
 
     .sectionOffer__Image {
@@ -91,6 +96,8 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 21px;
+
+    max-width: 1112px;
 
     .sectionLouis__ImageBox {
         background-color: $eucalyptus;
