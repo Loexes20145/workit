@@ -1,7 +1,9 @@
 @mixin pinNumber {
     width: 56px;
-    padding: 8px 0;
+    height: 56px;
     border: 1px solid $davys-grey;
     border-radius: 28px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

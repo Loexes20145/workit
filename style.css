@@ -99,6 +99,9 @@ main {
   align-items: center;
   gap: 24px;
 }
+.sectionOffer__Element p {
+  max-width: 473px;
+}
 .sectionOffer__Element__Text {
   text-align: center;
 }
@@ -166,10 +169,12 @@ main {
 }
 .title__Number {
   width: 56px;
-  padding: 8px 0;
+  height: 56px;
   border: 1px solid #584d62;
   border-radius: 28px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
@@ -240,12 +245,12 @@ a.cta--Highlight:hover {
   .sectionOffer__Element {
     margin: 40px 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 24px;
   }
   .sectionOffer__Element__Text {
-    text-align: center;
+    text-align: start;
   }
   .sectionOffer .sectionOffer__Image {
     width: 514px;
@@ -299,10 +304,12 @@ a.cta--Highlight:hover {
   }
   .title__Number {
     width: 56px;
-    padding: 8px 0;
+    height: 56px;
     border: 1px solid #584d62;
     border-radius: 28px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   a {
     font-weight: bold;
