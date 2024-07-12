@@ -224,32 +224,22 @@ a.cta--Highlight:hover {
     padding: 0;
   }
   header {
-    display: flex;
-    justify-content: space-between;
     margin-right: 40px;
     margin-left: 40px;
   }
   main {
     margin: 0;
-    background: top -50px left 0 url(assets/loops-left.png) no-repeat, top 184px right 0 url(assets/loops-right.png) no-repeat;
+    background: top 0 left -227px url(assets/loops-left.png) no-repeat, top 184px right -93px url(assets/loops-right.png) no-repeat;
   }
   .mainHero {
     max-width: 343px;
     margin: 56px auto;
   }
   .sectionOffer {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 67px;
-    margin-bottom: 100px;
   }
   .sectionOffer__Element {
-    margin: 40px 0;
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 24px;
   }
   .sectionOffer__Element__Text {
     text-align: start;
@@ -257,8 +247,6 @@ a.cta--Highlight:hover {
   .sectionOffer .sectionOffer__Image {
     width: 514px;
     height: 296px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .sectionLouis {
     align-items: start;
@@ -275,12 +263,6 @@ a.cta--Highlight:hover {
     top: 442px;
     left: 456px;
     background: url(assets/loops-louis.png) no-repeat;
-  }
-  .sectionLouis .sectionLouis__ImageBox .sectionLouis__ImageBox__Profile {
-    width: 265px;
-    height: 267px;
-    position: relative;
-    top: 19px;
   }
   .sectionLouis .sectionLouis__Content {
     height: 375px;
@@ -322,45 +304,101 @@ a.cta--Highlight:hover {
     justify-content: center;
     align-items: center;
   }
-  a {
-    font-weight: bold;
-    line-height: 32px;
-    text-decoration: none;
+  .footer {
+    width: 116px;
+    height: 102.2px;
+    margin: 64px auto;
   }
-  a.cta--Button {
-    border: 2px solid #44ffa1;
-    color: #24053e;
-    background-color: #44ffa1;
-    padding: 10px 22px;
+}
+@media only screen and (min-width: 1440px) {
+  body {
+    padding: 0;
   }
-  a.cta--Button:hover {
-    border-color: #44ffa1;
-    color: #44ffa1;
-    background-color: #24053e;
+  header {
+    margin-right: 40px;
+    margin-left: 40px;
   }
-  a.cta--Highlight {
+  main {
+    margin: 0;
+    background: top 0 left -227px url(assets/loops-left.png) no-repeat, top 184px right -93px url(assets/loops-right.png) no-repeat;
+  }
+  .mainHero {
+    max-width: 343px;
+    margin: 56px auto;
+  }
+  .sectionOffer {
+    align-items: center;
+  }
+  .sectionOffer__Element {
+    flex-direction: row;
+  }
+  .sectionOffer__Element__Text {
+    text-align: start;
+  }
+  .sectionOffer .sectionOffer__Image {
+    width: 514px;
+    height: 296px;
+  }
+  .sectionLouis {
+    align-items: start;
+    margin: 0 40px;
+    height: 526px;
+    position: relative;
+  }
+  .sectionLouis::after {
+    content: "";
+    width: 221px;
+    height: 212px;
+    display: block;
+    position: absolute;
+    top: 442px;
+    left: 456px;
+    background: url(assets/loops-louis.png) no-repeat;
+  }
+  .sectionLouis .sectionLouis__Content {
+    height: 375px;
+    align-items: flex-start;
+    text-align: start;
+    position: absolute;
+    top: 151px;
+    left: 175px;
+  }
+  .title {
+    display: inline-block;
+  }
+  .title--Small {
+    font-family: "Fraunces";
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .title--Medium {
+    font-family: "Fraunces";
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .title--Large {
+    font-family: "Fraunces";
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .title__highlight {
     padding-bottom: 2px;
     border-bottom: 3px solid #44ffa1;
-    color: #ffffff;
+    color: inherit;
   }
-  a.cta--Highlight:hover {
-    border-bottom-color: #44ffa1;
-    color: #44ffa1;
+  .title__Number {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #584d62;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .footer {
     width: 116px;
     height: 102.2px;
     margin: 64px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .footer img {
-    display: inline-block;
-  }
-  .footer .footer__Social {
-    display: flex;
-    justify-content: space-between;
   }
 }
 
