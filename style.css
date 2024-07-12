@@ -231,6 +231,7 @@ a.cta--Highlight:hover {
   }
   main {
     margin: 0;
+    background: top -50px left 0 url(assets/loops-left.png) no-repeat, top 184px right 0 url(assets/loops-right.png) no-repeat;
   }
   .mainHero {
     max-width: 343px;
@@ -239,6 +240,7 @@ a.cta--Highlight:hover {
   .sectionOffer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 67px;
     margin-bottom: 100px;
   }
@@ -264,6 +266,16 @@ a.cta--Highlight:hover {
     height: 526px;
     position: relative;
   }
+  .sectionLouis::after {
+    content: "";
+    width: 221px;
+    height: 212px;
+    display: block;
+    position: absolute;
+    top: 442px;
+    left: 456px;
+    background: url(assets/loops-louis.png) no-repeat;
+  }
   .sectionLouis .sectionLouis__ImageBox .sectionLouis__ImageBox__Profile {
     width: 265px;
     height: 267px;
@@ -271,7 +283,6 @@ a.cta--Highlight:hover {
     top: 19px;
   }
   .sectionLouis .sectionLouis__Content {
-    width: 402px;
     height: 375px;
     align-items: flex-start;
     text-align: start;

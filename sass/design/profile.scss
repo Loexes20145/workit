@@ -1,6 +1,6 @@
 @mixin profile ($side) {
     width: $side;
     height: $side;
-    border-radius: $side/2;
+    border-radius: calc($side/2);
     overflow: hidden;
 }

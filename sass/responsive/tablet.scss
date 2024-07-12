@@ -13,6 +13,9 @@ header {
 
 main {
     margin: 0;
+    background:
+        top -50px left 0 url(assets/loops-left.png) no-repeat,
+        top 184px right 0 url(assets/loops-right.png) no-repeat;
 }
 
 .mainHero {
@@ -29,6 +32,7 @@ main {
     flex-direction: column;
     // justify-content: space-between;
     // gap: 40px;
+    align-items: center;
 
     margin-top: 67px;
     margin-bottom: 100px;
@@ -40,7 +44,7 @@ main {
         align-items: center;
         gap: 24px;
 
-        .title__Number {}
+        // .title__Number {}
     }
 
     &__Element__Text {
@@ -67,6 +71,17 @@ main {
     height: 526px;
     position: relative;
 
+    &::after {
+        content: '';
+        width: 221px;
+        height: 212px;
+        display: block;
+        position: absolute;
+        top: 442px;
+        left: 456px;
+        background: url(assets/loops-louis.png) no-repeat;
+        // background-size: 173px 137px;
+    }
 
     .sectionLouis__ImageBox {
         // position: relative;
@@ -81,7 +96,7 @@ main {
     }
 
     .sectionLouis__Content {
-        width: 402px;
+        // width: 402px;
         height: 375px;
         align-items: flex-start;
         text-align: start;
@@ -89,6 +104,15 @@ main {
         position: absolute;
         top: 151px;
         left: 175px;
+
+        // background: 
+        //     $dark-purple
+        //     url(assets/loops.svg)
+        //     no-repeat
+        //     281px 269px;
+        // background-size: 137px 173px;
+
+        
     }
 }
 
