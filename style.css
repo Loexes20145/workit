@@ -61,8 +61,33 @@ body {
   font-family: "Manrope";
   font-size: 16px;
   line-height: 28px;
-  background: #f2ccf2;
+  background: #ffffff;
   padding: 0 16px;
+  z-index: 2;
+}
+body::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #24053e;
+  width: 100vw;
+  height: 730px;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+}
+body::after {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: 504px;
+  left: 0;
+  background: blue;
+  width: 100vw;
+  height: 960px;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
 }
 
 header {
