@@ -117,9 +117,6 @@ main {
 }
 
 .sectionLouis {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-bottom: 21px;
   max-width: 1112px;
 }
@@ -143,10 +140,10 @@ main {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   min-width: 281px;
   height: 375px;
-  padding: 0 31px;
+  padding: 31px;
   position: relative;
   top: -53px;
 }
@@ -237,8 +234,9 @@ a.cta--Highlight:hover {
     background: top 0 left -227px url(assets/loops-left.png) no-repeat, top 184px right -93px url(assets/loops-right.png) no-repeat;
   }
   .mainHero {
-    max-width: 343px;
-    margin: 56px auto;
+    max-width: 487px;
+    margin: auto;
+    padding: 0 60px;
   }
   .sectionOffer {
     align-items: center;
@@ -255,7 +253,7 @@ a.cta--Highlight:hover {
   }
   .sectionLouis {
     align-items: start;
-    margin: 0 40px;
+    margin: 0 auto;
     height: 526px;
     position: relative;
   }
@@ -317,23 +315,9 @@ a.cta--Highlight:hover {
 }
 @media only screen and (min-width: 1440px) {
   body {
-    padding: 0;
-  }
-  header {
-    margin-right: 40px;
-    margin-left: 40px;
-  }
-  main {
-    margin: 0;
-    background: top 0 left -227px url(assets/loops-left.png) no-repeat, top 184px right -93px url(assets/loops-right.png) no-repeat;
-  }
-  .mainHero {
-    max-width: 343px;
-    margin: 56px auto;
-  }
-  .sectionOffer {
-    flex-direction: column;
-    align-items: center;
+    font-family: "Manrope";
+    font-size: 18px;
+    line-height: 32px;
   }
   .sectionOffer .sectionOffer__Content {
     flex-direction: row;
@@ -341,6 +325,7 @@ a.cta--Highlight:hover {
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element {
     flex-direction: column;
+    max-width: 354px;
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
     text-align: center;
@@ -350,65 +335,36 @@ a.cta--Highlight:hover {
     height: 441px;
   }
   .sectionLouis {
-    align-items: start;
-    margin: 0 40px;
-    height: 526px;
-    position: relative;
+    max-width: 1112px;
+    height: 647px;
   }
   .sectionLouis::after {
     content: "";
     width: 221px;
     height: 212px;
-    display: block;
     position: absolute;
-    top: 442px;
-    left: 456px;
+    top: 436px;
+    left: 819px;
     background: url(assets/loops-louis.png) no-repeat;
   }
+  .sectionLouis .sectionLouis__ImageBox {
+    background-color: #44ffa1;
+    width: 477px;
+    height: 477px;
+    border-radius: 238.5px;
+    overflow: hidden;
+  }
+  .sectionLouis .sectionLouis__ImageBox .sectionLouis__ImageBox__Profile {
+    width: 450px;
+    height: 453px;
+    position: relative;
+    top: 33px;
+  }
   .sectionLouis .sectionLouis__Content {
-    height: 375px;
-    align-items: flex-start;
-    text-align: start;
-    position: absolute;
-    top: 151px;
-    left: 175px;
-  }
-  .title {
-    display: inline-block;
-  }
-  .title--Small {
-    font-family: "Fraunces";
-    font-size: 32px;
-    line-height: 40px;
-  }
-  .title--Medium {
-    font-family: "Fraunces";
-    font-size: 56px;
-    line-height: 64px;
-  }
-  .title--Large {
-    font-family: "Fraunces";
-    font-size: 80px;
-    line-height: 80px;
-  }
-  .title__highlight {
-    padding-bottom: 2px;
-    border-bottom: 3px solid #44ffa1;
-    color: inherit;
-  }
-  .title__Number {
-    width: 56px;
-    height: 56px;
-    border: 1px solid #584d62;
-    border-radius: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .footer {
-    width: 116px;
-    height: 102.2px;
-    margin: 64px auto;
+    top: 173px;
+    left: 382px;
+    padding: 64px;
+    height: 285px;
   }
 }
 

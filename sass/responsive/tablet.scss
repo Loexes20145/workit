@@ -19,8 +19,9 @@ main {
 .mainHero {
     // background-color: $dark-purple;
 
-    max-width: 343px;
-    margin: 56px auto;
+    max-width: 487px;
+    margin: auto;
+    padding: 0 60px;
 }
 
 .sectionOffer {
@@ -52,7 +53,7 @@ main {
 
     align-items: start;
 
-    margin: 0 40px;
+    margin: 0 auto;
     height: 526px;
     position: relative;
 

@@ -1,115 +1,60 @@
 body {
-    padding: 0;
-}
-
-header {
-    margin-right: 40px;
-    margin-left: 40px;
-
-    // background-color: $dark-purple;
-}
-
-main {
-    margin: 0;
-    background:
-        top 0 left -227px url(assets/loops-left.png) no-repeat,
-        top 184px right -93px url(assets/loops-right.png) no-repeat;
-}
-
-.mainHero {
-    // background-color: $dark-purple;
-
-    max-width: 343px;
-    margin: 56px auto;
+    @include bodyFont($size: 18px, $spacing: 32px);
 }
 
 .sectionOffer {
-    // background-color: $ghost-white;
-    flex-direction: column;
-    align-items: center;
 
-    .sectionOffer__Content {
-        flex-direction: row;
-        gap: 26px;
+     .sectionOffer__Content {
+         flex-direction: row;
+         gap: 26px;
 
-        .sectionOffer__Element {
-            flex-direction: column;
+         .sectionOffer__Element {
+             flex-direction: column;
+             max-width: 354px;  
+//             // .title__Number {}
+         }
     
-            // .title__Number {}
-        }
-    
-        .sectionOffer__Element__Text {
-            text-align: center;
-        }
-    }
+         .sectionOffer__Element__Text {
+             text-align: center;
+         }
+     }
 
-    .sectionOffer__Image {
-        width: 767px;
-        height: 441px;
-    }
+     .sectionOffer__Image {
+         width: 767px;
+         height: 441px;
+     }
 }
 
 .sectionLouis {
-    // background-color: $white;
-
-    align-items: start;
-
-    margin: 0 40px;
-    height: 526px;
-    position: relative;
+    max-width: 1112px;
+    height: 647px;
 
     &::after {
         content: '';
         width: 221px;
         height: 212px;
-        display: block;
         position: absolute;
-        top: 442px;
-        left: 456px;
+        top: 436px;
+        left: 819px;
         background: url(assets/loops-louis.png) no-repeat;
     }
 
+    .sectionLouis__ImageBox {
+        background-color: $eucalyptus;
+        @include profile(477px);
+
+        .sectionLouis__ImageBox__Profile {
+            width: 450px; 
+            height: 453px;
+            position: relative;
+            top: 33px;
+        }
+    }
+
     .sectionLouis__Content {
-        // width: 402px;
-        height: 375px;
-        align-items: flex-start;
-        text-align: start;
-
-        position: absolute;
-        top: 151px;
-        left: 175px;
+        top: 173px;
+        left: 382px;
+        padding: 64px;
+        height: 285px;
     }
-}
-
-.title {
-    // @include heading--Font;
-    display: inline-block;
-
-    &--Small {
-        @include headingFont($size: 32px, $spacing: 40px);
-    }
-
-    &--Medium {
-        @include headingFont($size: 56px, $spacing: 64px);
-    }
-
-    &--Large {
-        @include headingFont($size: 80px, $spacing: 80px);
-    }
-
-    &__highlight {
-        @include highlight--Default($txt-color: inherit);
-    }
-
-    &__Number {
-        @include pinNumber;
-
-        // margin: 15px;
-    }
-}
-
-.footer {
-    width: 116px;
-    height: 102.2px;
-    margin: 64px auto;
 }
