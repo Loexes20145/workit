@@ -2,6 +2,10 @@ body {
     @include bodyFont($size: 18px, $spacing: 32px);
 }
 
+header {
+    padding: 56px 165px;
+}
+
 .sectionOffer {
 
      .sectionOffer__Content {

@@ -3,25 +3,17 @@ body {
 }
 
 header {
-    margin-right: 40px;
-    margin-left: 40px;
-
-    // background-color: $dark-purple;
+    padding: 32px 40px;
 }
 
 main {
-    margin: 0;
     background:
         top 0 left -227px url(assets/loops-left.png) no-repeat,
         top 184px right -93px url(assets/loops-right.png) no-repeat;
 }
 
 .mainHero {
-    // background-color: $dark-purple;
-
     max-width: 487px;
-    margin: auto;
-    padding: 0 60px;
 }
 
 .sectionOffer {
@@ -53,7 +45,7 @@ main {
 
     align-items: start;
 
-    margin: 0 auto;
+    // margin: 0 auto;
     height: 526px;
     position: relative;
 

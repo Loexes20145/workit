@@ -13,7 +13,7 @@
 body {
     @include bodyFont($size: 16px, $spacing: 28px);
     background: $white;
-    padding: 0 16px;
+    // padding: 0 16px;
     z-index: 2;
 
     // background-image: radial-gradient(
@@ -30,62 +30,58 @@ body {
         left: 0 ;
         background: $dark-purple;
         width: 100vw ;
-        height: 730px ;
-        border-bottom-left-radius: 50% 10%;
-        border-bottom-right-radius: 50% 10%;
-    }
-
-    &::after {
-        content: "" ;
-        z-index: -2 ;
-        position: absolute ;
-        top: 504px ;
-        left: 0 ;
-        background: blue;
-        width: 100vw ;
-        height: 960px ;
-        border-bottom-left-radius: 50% 10%;
-        border-bottom-right-radius: 50% 10%;
+        height: 482px ;
+        border-bottom-left-radius: 50% 18px;
+        border-bottom-right-radius: 50% 18px;
     }
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    margin: 32px 0;
-
-    // background-color: $dark-purple;
-}
-
-main {
-    margin: 64px 0;
+    padding: 32px 16px;
 }
 
 .mainHero {
-    // background-color: $dark-purple;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: $white;
     text-align: center;
+    max-width: 343px;
+    margin: 32px auto;
 
-    margin: 32px 0;
+    .mainHero__Header {
+        margin-bottom: 20px;
+    }
 
     .mainHero__Link {
-        margin: 40px 0 64px 0;
+        margin-top: 20px;
+        display: inline-block;
     }
 }
 
 .sectionOffer {
     // background-color: $ghost-white;
+    position: relative;
 
     display: flex;
     flex-direction: column;
     // justify-content: space-between;
     // gap: 40px;
 
-    margin-top: 67px;
-    margin-bottom: 100px;
+    // margin-top: 67px;
+    // margin-bottom: 100px;
+
+    &::before {
+        content: "" ;
+        z-index: -2 ;
+        position: absolute ;
+        top: 0 ;
+        left: 0 ;
+        background: blue;
+        width: 100vw ;
+        height: 100%;
+        border-bottom-left-radius: 50% 5%;
+        border-bottom-right-radius: 50% 5%;
+    }
 
     .sectionOffer__Content {
         display: flex;
@@ -123,7 +119,7 @@ main {
     // display: flex;
     // flex-direction: column;
     // align-items: center;
-    margin-bottom: 21px;
+    // margin-bottom: 21px;
 
     max-width: 1112px;
 

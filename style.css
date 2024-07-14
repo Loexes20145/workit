@@ -62,7 +62,6 @@ body {
   font-size: 16px;
   line-height: 28px;
   background: #ffffff;
-  padding: 0 16px;
   z-index: 2;
 }
 body::before {
@@ -73,49 +72,47 @@ body::before {
   left: 0;
   background: #24053e;
   width: 100vw;
-  height: 730px;
-  border-bottom-left-radius: 50% 10%;
-  border-bottom-right-radius: 50% 10%;
-}
-body::after {
-  content: "";
-  z-index: -2;
-  position: absolute;
-  top: 504px;
-  left: 0;
-  background: blue;
-  width: 100vw;
-  height: 960px;
-  border-bottom-left-radius: 50% 10%;
-  border-bottom-right-radius: 50% 10%;
+  height: 482px;
+  border-bottom-left-radius: 50% 18px;
+  border-bottom-right-radius: 50% 18px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  margin: 32px 0;
-}
-
-main {
-  margin: 64px 0;
+  padding: 32px 16px;
 }
 
 .mainHero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  color: #ffffff;
   text-align: center;
-  margin: 32px 0;
+  max-width: 343px;
+  margin: 32px auto;
+}
+.mainHero .mainHero__Header {
+  margin-bottom: 20px;
 }
 .mainHero .mainHero__Link {
-  margin: 40px 0 64px 0;
+  margin-top: 20px;
+  display: inline-block;
 }
 
 .sectionOffer {
+  position: relative;
   display: flex;
   flex-direction: column;
-  margin-top: 67px;
-  margin-bottom: 100px;
+}
+.sectionOffer::before {
+  content: "";
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: blue;
+  width: 100vw;
+  height: 100%;
+  border-bottom-left-radius: 50% 5%;
+  border-bottom-right-radius: 50% 5%;
 }
 .sectionOffer .sectionOffer__Content {
   display: flex;
@@ -142,7 +139,6 @@ main {
 }
 
 .sectionLouis {
-  margin-bottom: 21px;
   max-width: 1112px;
 }
 .sectionLouis .sectionLouis__ImageBox {
@@ -251,17 +247,13 @@ a.cta--Highlight:hover {
     padding: 0;
   }
   header {
-    margin-right: 40px;
-    margin-left: 40px;
+    padding: 32px 40px;
   }
   main {
-    margin: 0;
     background: top 0 left -227px url(assets/loops-left.png) no-repeat, top 184px right -93px url(assets/loops-right.png) no-repeat;
   }
   .mainHero {
     max-width: 487px;
-    margin: auto;
-    padding: 0 60px;
   }
   .sectionOffer {
     align-items: center;
@@ -278,7 +270,6 @@ a.cta--Highlight:hover {
   }
   .sectionLouis {
     align-items: start;
-    margin: 0 auto;
     height: 526px;
     position: relative;
   }
@@ -343,6 +334,9 @@ a.cta--Highlight:hover {
     font-family: "Manrope";
     font-size: 18px;
     line-height: 32px;
+  }
+  header {
+    padding: 56px 165px;
   }
   .sectionOffer .sectionOffer__Content {
     flex-direction: row;
