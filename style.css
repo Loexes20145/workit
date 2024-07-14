@@ -99,8 +99,10 @@ header {
 
 .sectionOffer {
   position: relative;
+  padding: 32px 0;
   display: flex;
   flex-direction: column;
+  gap: 44px;
 }
 .sectionOffer::before {
   content: "";
@@ -114,12 +116,18 @@ header {
   border-bottom-left-radius: 50% 5%;
   border-bottom-right-radius: 50% 5%;
 }
+.sectionOffer .sectionOffer__Image {
+  width: 320px;
+  height: 184px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .sectionOffer .sectionOffer__Content {
   display: flex;
   flex-direction: column;
 }
 .sectionOffer .sectionOffer__Content .sectionOffer__Element {
-  margin: 40px 0;
+  margin: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,12 +138,9 @@ header {
 }
 .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
   text-align: center;
-}
-.sectionOffer .sectionOffer__Image {
-  width: 320px;
-  height: 184px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .sectionLouis {
@@ -260,6 +265,7 @@ a.cta--Highlight:hover {
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element {
     flex-direction: row;
+    gap: 32px;
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
     text-align: start;
@@ -344,10 +350,12 @@ a.cta--Highlight:hover {
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element {
     flex-direction: column;
+    gap: 26px;
     max-width: 354px;
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
     text-align: center;
+    gap: 28px;
   }
   .sectionOffer .sectionOffer__Image {
     width: 767px;

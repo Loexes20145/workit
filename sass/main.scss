@@ -59,16 +59,12 @@ header {
 }
 
 .sectionOffer {
-    // background-color: $ghost-white;
     position: relative;
+    padding: 32px 0;
 
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // gap: 40px;
-
-    // margin-top: 67px;
-    // margin-bottom: 100px;
+    gap: 44px;
 
     &::before {
         content: "" ;
@@ -82,13 +78,20 @@ header {
         border-bottom-left-radius: 50% 5%;
         border-bottom-right-radius: 50% 5%;
     }
+    
+    .sectionOffer__Image {
+        width: 320px;
+        height: 184px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .sectionOffer__Content {
         display: flex;
         flex-direction: column;
 
         .sectionOffer__Element {
-            margin: 40px 0;
+            margin: 20px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -101,16 +104,11 @@ header {
     
         .sectionOffer__Element__Text {
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
         }
     }
-
-    .sectionOffer__Image {
-        width: 320px;
-        height: 184px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
 }
 
 .sectionLouis {

@@ -17,16 +17,13 @@ main {
 }
 
 .sectionOffer {
-    // background-color: $ghost-white;
-
     align-items: center;
 
     .sectionOffer__Content {
         
         .sectionOffer__Element {
             flex-direction: row;
-    
-            // .title__Number {}
+            gap: 32px;
         }
     
         .sectionOffer__Element__Text {

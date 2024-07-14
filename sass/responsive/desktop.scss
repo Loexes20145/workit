@@ -14,12 +14,13 @@ header {
 
          .sectionOffer__Element {
              flex-direction: column;
-             max-width: 354px;  
-//             // .title__Number {}
+             gap: 26px;
+             max-width: 354px;
          }
     
          .sectionOffer__Element__Text {
              text-align: center;
+             gap: 28px;
          }
      }
 
