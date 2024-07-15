@@ -1,4 +1,3 @@
-/* Design System */
 html, body, div, span, h1, h2, h3,
 a, img, article, footer, header, nav, section, p {
   margin: 0;
@@ -74,9 +73,15 @@ body::before {
   min-height: 56px;
   border: 1px solid #584d62;
   border-radius: 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 a {
@@ -105,8 +110,12 @@ a.cta--Highlight:hover {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 32px 16px 32px 16px;
 }
 
@@ -127,8 +136,13 @@ header {
 .sectionOffer {
   position: relative;
   padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 44px;
 }
 .sectionOffer::before {
@@ -150,20 +164,37 @@ header {
   margin-right: auto;
 }
 .sectionOffer .sectionOffer__Content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .sectionOffer .sectionOffer__Content .sectionOffer__Element {
   margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 24px;
 }
 .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
 }
 .sectionOffer .sectionOffer__Content .sectionOffer__Element__Number,
@@ -199,11 +230,20 @@ header {
   top: 228px;
   color: #ffffff;
   background-color: #24053e;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 375px;
   padding: 0 31px;
 }
@@ -222,16 +262,27 @@ header {
   width: 116px;
   height: 102.2px;
   margin: 74px auto 64px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer .footer__Logo {
   margin: 0 auto;
 }
 .footer .footer__Social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer a {
   display: inline-block;
@@ -273,9 +324,15 @@ header {
     min-height: 56px;
     border: 1px solid #584d62;
     border-radius: 28px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   header {
     padding: 32px 40px 0 40px;
@@ -288,7 +345,9 @@ header {
     margin: 56px auto;
   }
   .sectionOffer {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 36px;
     padding: 0 0 83px 0;
   }
@@ -300,7 +359,10 @@ header {
     margin: 0 97px;
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 32px;
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
@@ -333,7 +395,9 @@ header {
     width: 402px;
     height: 375px;
     padding: 0 56px;
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     text-align: start;
   }
   .sectionLouis .sectionLouis__Content .sectionLouis__Content__Title {
@@ -377,11 +441,17 @@ header {
     border-bottom-right-radius: 50% 64px;
   }
   .sectionOffer .sectionOffer__Content {
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 26px;
   }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 56px;
     max-width: 354px;
     margin: 0;
