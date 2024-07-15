@@ -296,6 +296,9 @@ header {
     border-bottom-left-radius: 50% 36px;
     border-bottom-right-radius: 50% 36px;
   }
+  .sectionOffer .sectionOffer__Content {
+    margin: 0 97px;
+  }
   .sectionOffer .sectionOffer__Content .sectionOffer__Element {
     flex-direction: row;
     gap: 32px;
