@@ -70,8 +70,8 @@ body::before {
   color: inherit;
 }
 .title__Number {
-  width: 56px;
-  height: 56px;
+  min-width: 56px;
+  min-height: 56px;
   border: 1px solid #584d62;
   border-radius: 28px;
   display: flex;
@@ -269,8 +269,8 @@ header {
     color: inherit;
   }
   .title__Number {
-    width: 56px;
-    height: 56px;
+    min-width: 56px;
+    min-height: 56px;
     border: 1px solid #584d62;
     border-radius: 28px;
     display: flex;
