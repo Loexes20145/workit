@@ -31,8 +31,9 @@ header {
 }
 
 .sectionLouis {
-    max-width: 1112px;
-    height: 647px;
+    width: 1112px;
+    height: 647.74px;
+    margin-top: 110px;
 
     &::after {
         content: '';
@@ -60,6 +61,24 @@ header {
         top: 173px;
         left: 382px;
         padding: 64px;
+        width: 602px;
         height: 285px;
+
+        .sectionLouis__Content__Title {
+            margin: 0;
+        }
+        
+        .sectionLouis__Content__Text {
+            margin: 0;
+        }
+
+        .sectionLouis__Content__LinkBox {
+            margin: 0;
+        }
     }
+}
+
+.footer {
+    margin-top: 60px;
+    margin-bottom: 110px;
 }

@@ -1,17 +1,6 @@
 /* Design System */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, h1, h2, h3,
+a, img, article, footer, header, nav, section, p {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,32 +10,12 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, footer, header, nav, section {
   display: block;
 }
 
 body {
   line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 @font-face {
@@ -144,10 +113,14 @@ header {
 }
 
 .sectionLouis {
-  max-width: 1112px;
+  position: relative;
+  height: 603px;
+  width: 343px;
+  margin: 100px auto 0 auto;
 }
 .sectionLouis .sectionLouis__ImageBox {
   background-color: #44ffa1;
+  margin: 0 auto;
   width: 281px;
   height: 281px;
   border-radius: 140.5px;
@@ -160,6 +133,8 @@ header {
   top: 19px;
 }
 .sectionLouis .sectionLouis__Content {
+  position: absolute;
+  top: 228px;
   color: #ffffff;
   background-color: #24053e;
   display: flex;
@@ -167,11 +142,18 @@ header {
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  min-width: 281px;
   height: 375px;
-  padding: 31px;
-  position: relative;
-  top: -53px;
+  padding: 0 31px;
+}
+.sectionLouis .sectionLouis__Content .sectionLouis__Content__Title {
+  margin-top: 32px;
+}
+.sectionLouis .sectionLouis__Content .sectionLouis__Content__Text {
+  margin: 16px 0 24px 0;
+}
+.sectionLouis .sectionLouis__Content .sectionLouis__Content__LinkBox {
+  display: inline-block;
+  margin-bottom: 32px;
 }
 
 .title--Small {
@@ -234,7 +216,7 @@ a.cta--Highlight:hover {
 .footer {
   width: 116px;
   height: 102.2px;
-  margin: 64px auto;
+  margin: 74px auto 64px auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -275,9 +257,8 @@ a.cta--Highlight:hover {
     height: 296px;
   }
   .sectionLouis {
-    align-items: start;
     height: 526px;
-    position: relative;
+    width: 689px;
   }
   .sectionLouis::after {
     content: "";
@@ -289,13 +270,26 @@ a.cta--Highlight:hover {
     left: 456px;
     background: url(assets/loops-louis.png) no-repeat;
   }
+  .sectionLouis .sectionLouis__ImageBox {
+    margin: 0;
+  }
   .sectionLouis .sectionLouis__Content {
-    height: 375px;
-    align-items: flex-start;
-    text-align: start;
-    position: absolute;
     top: 151px;
     left: 175px;
+    width: 402px;
+    height: 375px;
+    padding: 0 56px;
+    align-items: flex-start;
+    text-align: start;
+  }
+  .sectionLouis .sectionLouis__Content .sectionLouis__Content__Title {
+    margin-top: 48px;
+  }
+  .sectionLouis .sectionLouis__Content .sectionLouis__Content__Text {
+    margin: 24px 0;
+  }
+  .sectionLouis .sectionLouis__Content .sectionLouis__Content__LinkBox {
+    margin-bottom: 48px;
   }
   .title {
     display: inline-block;
@@ -330,9 +324,8 @@ a.cta--Highlight:hover {
     align-items: center;
   }
   .footer {
-    width: 116px;
-    height: 102.2px;
-    margin: 64px auto;
+    margin-top: 80px;
+    margin-bottom: 122px;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -362,8 +355,9 @@ a.cta--Highlight:hover {
     height: 441px;
   }
   .sectionLouis {
-    max-width: 1112px;
-    height: 647px;
+    width: 1112px;
+    height: 647.74px;
+    margin-top: 110px;
   }
   .sectionLouis::after {
     content: "";
@@ -391,7 +385,21 @@ a.cta--Highlight:hover {
     top: 173px;
     left: 382px;
     padding: 64px;
+    width: 602px;
     height: 285px;
+  }
+  .sectionLouis .sectionLouis__Content .sectionLouis__Content__Title {
+    margin: 0;
+  }
+  .sectionLouis .sectionLouis__Content .sectionLouis__Content__Text {
+    margin: 0;
+  }
+  .sectionLouis .sectionLouis__Content .sectionLouis__Content__LinkBox {
+    margin: 0;
+  }
+  .footer {
+    margin-top: 60px;
+    margin-bottom: 110px;
   }
 }
 

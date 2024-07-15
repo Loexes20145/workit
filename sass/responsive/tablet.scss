@@ -38,13 +38,8 @@ main {
 }
 
 .sectionLouis {
-    // background-color: $white;
-
-    align-items: start;
-
-    // margin: 0 auto;
     height: 526px;
-    position: relative;
+    width: 689px;
 
     &::after {
         content: '';
@@ -57,15 +52,30 @@ main {
         background: url(assets/loops-louis.png) no-repeat;
     }
 
+    .sectionLouis__ImageBox {
+        margin: 0;
+    }
+
     .sectionLouis__Content {
-        // width: 402px;
+        top: 151px;
+        left: 175px;
+        width: 402px;
         height: 375px;
+        padding: 0 56px;
         align-items: flex-start;
         text-align: start;
 
-        position: absolute;
-        top: 151px;
-        left: 175px;
+        .sectionLouis__Content__Title {
+            margin-top: 48px;
+        }
+        
+        .sectionLouis__Content__Text {
+            margin: 24px 0;
+        }
+
+        .sectionLouis__Content__LinkBox {
+            margin-bottom: 48px;
+        }
     }
 }
 
@@ -97,7 +107,6 @@ main {
 }
 
 .footer {
-    width: 116px;
-    height: 102.2px;
-    margin: 64px auto;
+    margin-top: 80px;
+    margin-bottom: 122px;
 }

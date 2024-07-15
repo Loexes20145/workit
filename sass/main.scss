@@ -112,17 +112,14 @@ header {
 }
 
 .sectionLouis {
-    // background-color: $white;
-
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    // margin-bottom: 21px;
-
-    max-width: 1112px;
+    position: relative;
+    height: 603px;
+    width: 343px;
+    margin: 100px auto 0 auto;
 
     .sectionLouis__ImageBox {
         background-color: $eucalyptus;
+        margin: 0 auto;
         @include profile(281px);
 
         .sectionLouis__ImageBox__Profile {
@@ -134,6 +131,8 @@ header {
     }
 
     .sectionLouis__Content {
+        position: absolute;
+        top: 228px;
         color: $white;
         background-color: $dark-purple;
         display: flex;
@@ -141,21 +140,21 @@ header {
         text-align: center;
         align-items: center;
         justify-content: space-between;
-
-        min-width: 281px;
-        // max-width: 730px;
         height: 375px;
-        padding: 31px;
-        position: relative;
-        top: -53px;
+        padding: 0 31px;
 
-        // .title {
-        //     margin-bottom: 16px;
-        // }
+        .sectionLouis__Content__Title {
+            margin-top: 32px;
+        }
+        
+        .sectionLouis__Content__Text {
+            margin: 16px 0 24px 0;
+        }
 
-        // &__Text {
-        //     margin-bottom: 24px
-        // }
+        .sectionLouis__Content__LinkBox {
+            display: inline-block;
+            margin-bottom: 32px;
+        }
     }
 }
 
@@ -212,7 +211,7 @@ a {
 .footer {
     width: 116px;
     height: 102.2px;
-    margin: 64px auto;
+    margin: 74px auto 64px auto;
 
     display: flex;
     flex-direction: column;
