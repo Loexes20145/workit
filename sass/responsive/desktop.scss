@@ -1,12 +1,27 @@
 body {
     @include bodyFont($size: 18px, $spacing: 32px);
+
+    &::before {
+        height: 680px ;
+    }
 }
 
 header {
-    padding: 56px 165px;
+    padding: 56px 165px 0 165px;
+}
+
+.mainHero {
+    margin: 55px auto 50px auto;
 }
 
 .sectionOffer {
+    gap: 90px;
+    padding-bottom: 171px;
+
+    &::before {
+        border-bottom-left-radius: 50% 64px;
+        border-bottom-right-radius: 50% 64px;
+    }
 
      .sectionOffer__Content {
          flex-direction: row;
@@ -14,8 +29,9 @@ header {
 
          .sectionOffer__Element {
              flex-direction: column;
-             gap: 26px;
+             gap: 56px;
              max-width: 354px;
+             margin: 0;
          }
     
          .sectionOffer__Element__Text {

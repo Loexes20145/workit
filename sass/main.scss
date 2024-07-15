@@ -31,15 +31,15 @@ body {
         background: $dark-purple;
         width: 100vw ;
         height: 482px ;
-        border-bottom-left-radius: 50% 18px;
-        border-bottom-right-radius: 50% 18px;
+        border-bottom-left-radius: 50% 13%;
+        border-bottom-right-radius: 50% 13%;
     }
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 32px 16px;
+    padding: 32px 16px 0 16px;
 }
 
 .mainHero {
@@ -49,11 +49,11 @@ header {
     margin: 32px auto;
 
     .mainHero__Header {
-        margin-bottom: 20px;
+        margin-bottom: 19px;
     }
 
     .mainHero__Link {
-        margin-top: 20px;
+        margin-top: 19px;
         display: inline-block;
     }
 }
@@ -72,11 +72,11 @@ header {
         position: absolute ;
         top: 0 ;
         left: 0 ;
-        background: blue;
+        background: $ghost-white;
         width: 100vw ;
         height: 100%;
-        border-bottom-left-radius: 50% 5%;
-        border-bottom-right-radius: 50% 5%;
+        border-bottom-left-radius: 50% 18px;
+        border-bottom-right-radius: 50% 18px;
     }
     
     .sectionOffer__Image {
@@ -218,13 +218,22 @@ a {
     justify-content: space-between;
     // align-items: center;
 
-    img {
-        display: inline-block;
+    .footer__Logo {
+        margin: 0 auto;
     }
 
     .footer__Social {
         display: flex;
         justify-content: space-between;
+    }
+
+    a {
+        display: inline-block;
+        color: $davys-grey;
+
+        &:hover {
+            color: $dark-purple;
+        }
     }
 }
 
