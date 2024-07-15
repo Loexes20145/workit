@@ -31,7 +31,6 @@ body {
   font-size: 16px;
   line-height: 28px;
   background: #ffffff;
-  z-index: 2;
 }
 body::before {
   content: "";
@@ -42,14 +41,73 @@ body::before {
   background: #24053e;
   width: 100vw;
   height: 482px;
-  border-bottom-left-radius: 50% 13%;
-  border-bottom-right-radius: 50% 13%;
+  border-bottom-left-radius: 50% 9%;
+  border-bottom-right-radius: 50% 9%;
+}
+
+.title {
+  display: inline-block;
+}
+.title--Small {
+  font-family: "Fraunces";
+  font-size: 28px;
+  line-height: 36px;
+}
+.title--Medium {
+  font-family: "Fraunces";
+  font-size: 32px;
+  line-height: 48px;
+}
+.title--Large {
+  font-family: "Fraunces";
+  font-size: 50px;
+  line-height: 50px;
+}
+.title__highlight {
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 3px solid #44ffa1;
+  color: inherit;
+}
+.title__Number {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #584d62;
+  border-radius: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+}
+a.cta--Button {
+  border: 2px solid #44ffa1;
+  color: #24053e;
+  background-color: #44ffa1;
+  padding: 10px 22px;
+}
+a.cta--Button:hover {
+  border-color: #44ffa1;
+  color: #44ffa1;
+  background-color: #24053e;
+}
+a.cta--Highlight {
+  padding-bottom: 2px;
+  border-bottom: 3px solid #44ffa1;
+  color: #ffffff;
+}
+a.cta--Highlight:hover {
+  border-bottom-color: #44ffa1;
+  color: #44ffa1;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  padding: 32px 16px 0 16px;
+  padding: 32px 16px 32px 16px;
 }
 
 .mainHero {
@@ -102,14 +160,18 @@ header {
   align-items: center;
   gap: 24px;
 }
-.sectionOffer .sectionOffer__Content .sectionOffer__Element p {
-  max-width: 473px;
-}
 .sectionOffer .sectionOffer__Content .sectionOffer__Element__Text {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+.sectionOffer .sectionOffer__Content .sectionOffer__Element__Number,
+.sectionOffer .sectionOffer__Content .sectionOffer__Element__Text__Title {
+  color: #24053e;
+}
+.sectionOffer .sectionOffer__Content p {
+  color: #584d62;
 }
 
 .sectionLouis {
@@ -156,63 +218,6 @@ header {
   margin-bottom: 32px;
 }
 
-.title--Small {
-  font-family: "Fraunces";
-  font-size: 28px;
-  line-height: 36px;
-}
-.title--Medium {
-  font-family: "Fraunces";
-  font-size: 32px;
-  line-height: 48px;
-}
-.title--Large {
-  font-family: "Fraunces";
-  font-size: 50px;
-  line-height: 50px;
-}
-.title__highlight {
-  display: inline-block;
-  padding-bottom: 2px;
-  border-bottom: 3px solid #44ffa1;
-  color: inherit;
-}
-.title__Number {
-  width: 56px;
-  height: 56px;
-  border: 1px solid #584d62;
-  border-radius: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-a {
-  font-weight: bold;
-  line-height: 32px;
-  text-decoration: none;
-}
-a.cta--Button {
-  border: 2px solid #44ffa1;
-  color: #24053e;
-  background-color: #44ffa1;
-  padding: 10px 22px;
-}
-a.cta--Button:hover {
-  border-color: #44ffa1;
-  color: #44ffa1;
-  background-color: #24053e;
-}
-a.cta--Highlight {
-  padding-bottom: 2px;
-  border-bottom: 3px solid #44ffa1;
-  color: #ffffff;
-}
-a.cta--Highlight:hover {
-  border-bottom-color: #44ffa1;
-  color: #44ffa1;
-}
-
 .footer {
   width: 116px;
   height: 102.2px;
@@ -243,11 +248,40 @@ a.cta--Highlight:hover {
   body::before {
     height: 571px;
   }
+  .title--Small {
+    font-family: "Fraunces";
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .title--Medium {
+    font-family: "Fraunces";
+    font-size: 48px;
+    line-height: 56px;
+  }
+  .title--Large {
+    font-family: "Fraunces";
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .title__highlight {
+    padding-bottom: 2px;
+    border-bottom: 3px solid #44ffa1;
+    color: inherit;
+  }
+  .title__Number {
+    width: 56px;
+    height: 56px;
+    border: 1px solid #584d62;
+    border-radius: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   header {
     padding: 32px 40px 0 40px;
   }
   main {
-    background: top 0 left -227px url(assets/loops-left.png) no-repeat, top 184px right -93px url(assets/loops-right.png) no-repeat;
+    background: top -50px left -227px url(assets/loops-left.png) no-repeat, top 128px right -93px url(assets/loops-right.png) no-repeat;
   }
   .mainHero {
     max-width: 487px;
@@ -308,38 +342,6 @@ a.cta--Highlight:hover {
   .sectionLouis .sectionLouis__Content .sectionLouis__Content__LinkBox {
     margin-bottom: 48px;
   }
-  .title {
-    display: inline-block;
-  }
-  .title--Small {
-    font-family: "Fraunces";
-    font-size: 28px;
-    line-height: 36px;
-  }
-  .title--Medium {
-    font-family: "Fraunces";
-    font-size: 48px;
-    line-height: 56px;
-  }
-  .title--Large {
-    font-family: "Fraunces";
-    font-size: 60px;
-    line-height: 60px;
-  }
-  .title__highlight {
-    padding-bottom: 2px;
-    border-bottom: 3px solid #44ffa1;
-    color: inherit;
-  }
-  .title__Number {
-    width: 56px;
-    height: 56px;
-    border: 1px solid #584d62;
-    border-radius: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .footer {
     margin-top: 80px;
     margin-bottom: 122px;
@@ -356,6 +358,9 @@ a.cta--Highlight:hover {
   }
   header {
     padding: 56px 165px 0 165px;
+  }
+  main {
+    background: top -30px left -138px url(assets/loops-left.png) no-repeat, top 168px right -48px url(assets/loops-right.png) no-repeat;
   }
   .mainHero {
     margin: 55px auto 50px auto;

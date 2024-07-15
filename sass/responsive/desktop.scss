@@ -10,6 +10,12 @@ header {
     padding: 56px 165px 0 165px;
 }
 
+main {
+    background:
+        top -30px left -138px url(assets/loops-left.png) no-repeat,
+        top 168px right -48px url(assets/loops-right.png) no-repeat;
+}
+
 .mainHero {
     margin: 55px auto 50px auto;
 }

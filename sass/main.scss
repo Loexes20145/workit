@@ -2,7 +2,6 @@
 
 @import 'responsive/reset.scss';
 @import 'design/font.scss';
-
 @import 'design/colors.scss';
 @import 'design/typography.scss';
 @import 'design/buttons.scss';
@@ -13,14 +12,6 @@
 body {
     @include bodyFont($size: 16px, $spacing: 28px);
     background: $white;
-    // padding: 0 16px;
-    z-index: 2;
-
-    // background-image: radial-gradient(
-    //     $dark-purple 0% 33%,
-    //     $ghost-white 33% 67%,
-    //     $white 67% 100%
-    // );
 
     &::before {
         content: "" ;
@@ -31,15 +22,62 @@ body {
         background: $dark-purple;
         width: 100vw ;
         height: 482px ;
-        border-bottom-left-radius: 50% 13%;
-        border-bottom-right-radius: 50% 13%;
+        border-bottom-left-radius: 50% 9%;
+        border-bottom-right-radius: 50% 9%;
+    }
+}
+
+.title {
+    display: inline-block;
+
+    &--Small {
+        @include headingFont($size: 28px, $spacing: 36px);
+    }
+
+    &--Medium {
+        @include headingFont($size: 32px, $spacing: 48px);
+    }
+
+    &--Large {
+        @include headingFont($size: 50px, $spacing: 50px);
+    }
+
+    &__highlight {
+        display: inline-block;
+        @include highlight--Default($txt-color: inherit);
+    }
+
+    &__Number {
+        @include pinNumber;
+    }
+}
+
+a {
+    font-weight: bold;
+    // line-height: 32px;
+    text-decoration: none;
+
+    &.cta--Button {
+        @include callToAction--Default;
+
+        &:hover {
+            @include callToAction--Hover;
+        }
+    }
+
+    &.cta--Highlight {
+        @include highlight--Default;
+
+        &:hover {
+            @include highlight--Hover;
+        }
     }
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    padding: 32px 16px 0 16px;
+    padding: 32px 16px 32px 16px;
 }
 
 .mainHero {
@@ -96,10 +134,6 @@ header {
             flex-direction: column;
             align-items: center;
             gap: 24px;
-    
-            p {
-                max-width: 473px;
-            }
         }
     
         .sectionOffer__Element__Text {
@@ -107,6 +141,15 @@ header {
             display: flex;
             flex-direction: column;
             gap: 16px;
+        }
+
+        .sectionOffer__Element__Number,
+        .sectionOffer__Element__Text__Title {
+            color: $dark-purple;
+        }
+
+        p {
+            color: $davys-grey;
         }
     }
 }
@@ -158,56 +201,6 @@ header {
     }
 }
 
-.title {
-    // @include heading--Font;
-    // display: inline-block;
-
-    &--Small {
-        @include headingFont($size: 28px, $spacing: 36px);
-    }
-
-    &--Medium {
-        @include headingFont($size: 32px, $spacing: 48px);
-    }
-
-    &--Large {
-        @include headingFont($size: 50px, $spacing: 50px);
-    }
-
-    &__highlight {
-        display: inline-block;
-        @include highlight--Default($txt-color: inherit);
-    }
-
-    &__Number {
-        @include pinNumber;
-
-        // margin: 15px;
-    }
-}
-
-a {
-    font-weight: bold;
-    line-height: 32px;
-    text-decoration: none;
-
-    &.cta--Button {
-        @include callToAction--Default;
-
-        &:hover {
-            @include callToAction--Hover;
-        }
-    }
-
-    &.cta--Highlight {
-        @include highlight--Default;
-
-        &:hover {
-            @include highlight--Hover;
-        }
-    }
-}
-
 .footer {
     width: 116px;
     height: 102.2px;
@@ -216,8 +209,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    // align-items: center;
-
+    
     .footer__Logo {
         margin: 0 auto;
     }

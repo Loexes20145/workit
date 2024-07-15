@@ -6,14 +6,37 @@ body {
     }
 }
 
+.title {
+
+    &--Small {
+        @include headingFont($size: 28px, $spacing: 36px);
+    }
+
+    &--Medium {
+        @include headingFont($size: 48px, $spacing: 56px);
+    }
+
+    &--Large {
+        @include headingFont($size: 60px, $spacing: 60px);
+    }
+
+    &__highlight {
+        @include highlight--Default($txt-color: inherit);
+    }
+
+    &__Number {
+        @include pinNumber;
+    }
+}
+
 header {
     padding: 32px 40px 0 40px;
 }
 
 main {
     background:
-        top 0 left -227px url(assets/loops-left.png) no-repeat,
-        top 184px right -93px url(assets/loops-right.png) no-repeat;
+        top -50px left -227px url(assets/loops-left.png) no-repeat,
+        top 128px right -93px url(assets/loops-right.png) no-repeat;
 }
 
 .mainHero {
@@ -88,33 +111,6 @@ main {
         .sectionLouis__Content__LinkBox {
             margin-bottom: 48px;
         }
-    }
-}
-
-.title {
-    // @include heading--Font;
-    display: inline-block;
-
-    &--Small {
-        @include headingFont($size: 28px, $spacing: 36px);
-    }
-
-    &--Medium {
-        @include headingFont($size: 48px, $spacing: 56px);
-    }
-
-    &--Large {
-        @include headingFont($size: 60px, $spacing: 60px);
-    }
-
-    &__highlight {
-        @include highlight--Default($txt-color: inherit);
-    }
-
-    &__Number {
-        @include pinNumber;
-
-        // margin: 15px;
     }
 }
 
